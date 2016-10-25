@@ -1,0 +1,7 @@
+body.impress-not-supported > section.fallback-message {
+  display: block;
+}
+
+section.fallback-message {
+  display: none;
+}
