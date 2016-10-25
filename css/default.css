@@ -1,3 +1,7 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
 body.impress-not-supported > section.fallback-message {
   display: block;
 }
