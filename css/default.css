@@ -1,11 +1,86 @@
+/**
+ * Common colors from our presentation templates:
+ *  - orange:     rgb(202, 95, 20)
+ *  - teal:       rgb(0, 122, 151)
+ *  - gold:       rgb(255, 199, 44)
+ *  - green:      rgb(164, 210, 51)
+ *  - blue:       rgb(12, 183, 225)
+ *  - purple:     rgb(128, 49, 167)
+ */
+
+
+/**
+ * Common styles
+ */
+html {
+  font: normal 150% / 1.65 sans-serif;
+}
+
 body {
   font-family: 'Source Sans Pro', sans-serif;
+  background-color: rgb(128, 49, 167);
+  background: radial-gradient(circle farthest-corner at center bottom, rgb(128, 49, 167) 20%, rgb(0, 0, 0));
+  color: rgb(238, 238, 238);
+}
+
+address {
+  font-style: unset;
+}
+
+img.icon {
+  display: inline-block;
+  width: auto;
+  height: 1em;
+  vertical-align: middle;
+}
+
+.hidden {
+  display: none;
+}
+
+footer > img.academy-logo {
+  width: 20%;
+  height: auto;
+  padding-top: 2em;
+}
+
+/**
+ * Text styles
+ */
+h1, h2, h3, h4, h5, h6 {
+  color: rgb(255, 255, 255);
+  white-space: nowrap;
+  font-weight: 300;
+}
+
+.is-highlight1 {
+  color: rgb(255, 199, 44);
+}
+
+.is-highlight2 {
+  color: rgb(12, 183, 225);
+}
+
+.is-highlight3 {
+  color: rgb(164, 210, 51);
+}
+
+.is-light-weight {
+  font-weight: 300;
+}
+
+.is-right-aligned {
+  text-align: right;
+}
+
+/* 
+ * Fallback message styles 
+ */
+section.fallback-message {
+  display: none;
 }
 
 body.impress-not-supported > section.fallback-message {
   display: block;
 }
 
-section.fallback-message {
-  display: none;
-}
