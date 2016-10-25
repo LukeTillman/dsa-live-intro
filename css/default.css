@@ -83,7 +83,7 @@ a {
   color: rgb(164, 210, 51);
 }
 
-.is-light-weight {
+.is-lightweight {
   font-weight: 300;
 }
 
@@ -106,3 +106,20 @@ body.impress-not-supported > section.fallback-message {
   display: block;
 }
 
+/**
+ * Specific slide styles
+ */
+
+#welcome-to-dsa-live > h1 {
+  position: relative;
+}
+
+#event-location {
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin: 0;
+  position: absolute;
+  right: 0;
+  bottom: -1.5rem;
+  transform: rotateZ(-5deg);
+}
