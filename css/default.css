@@ -44,6 +44,20 @@ footer > img.academy-logo {
   padding-top: 2em;
 }
 
+.step {
+  width: 960px;
+  opacity: 0.02;
+  transition: opacity 1s;
+}
+
+.step.active {
+  opacity: 1.0;
+}
+
+body.impress-on-overview .step {
+  opacity: 1.0;
+}
+
 /**
  * Text styles
  */
@@ -51,6 +65,10 @@ h1, h2, h3, h4, h5, h6 {
   color: rgb(255, 255, 255);
   white-space: nowrap;
   font-weight: 300;
+}
+
+a {
+  color: rgb(164, 210, 51);
 }
 
 .is-highlight1 {
@@ -69,8 +87,12 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
 }
 
-.is-right-aligned {
+.is-right {
   text-align: right;
+}
+
+.is-center {
+  text-align: center;
 }
 
 /* 
