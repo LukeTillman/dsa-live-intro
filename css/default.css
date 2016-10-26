@@ -74,9 +74,9 @@ body.show-speaker-notes .step.active .step-speaker-notes {
 /**
  * Text styles
  */
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6,
+.typl8-alpha, .typl8-beta, .typl8-gamma, .typl8-delta, .typl8-epsilon, .typl8-zeta {
   color: rgb(255, 255, 255);
-  white-space: nowrap;
   font-weight: 300;
 }
 
@@ -106,6 +106,14 @@ a {
 
 .is-center {
   text-align: center;
+}
+
+.call-to-action {
+  text-align: center;
+}
+
+.call-to-action > strong {
+  color: rgb(255, 199, 44);
 }
 
 /**
@@ -291,4 +299,13 @@ body.show-speaker-notes #toggle-notes {
 
 #more-money > ul > li.is-highlighted > span.value {
   background-color: rgb(255, 199, 44);
+}
+
+/**
+ * Hands-on experience with DSE
+ */
+#hands-on-with-dse > pre {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 0.5em;
+  border-radius: 0.5em;
 }
