@@ -123,3 +123,20 @@ body.impress-not-supported > section.fallback-message {
   bottom: -1.5rem;
   transform: rotateZ(-5deg);
 }
+
+#relational-db-background > .tile-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#relational-db-background > .tile-container > .tile {
+  flex-basis: 40%;
+  text-align: center;
+}
+
+#relational-db-background > .tile-container > .tile > img {
+  width: 100%;
+  height: auto;
+}
