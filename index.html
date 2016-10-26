@@ -8,7 +8,7 @@
   <link href="css/reset.css" rel="stylesheet" />
   <link href="css/default.css" rel="stylesheet" />
 </head>
-<body class="impress-not-supported">
+<body id="the-body" class="impress-not-supported">
   <!-- Shown if browser doesn't support impress features -->
   <section class="fallback-message">
     <p>
@@ -22,7 +22,7 @@
   </section>
 
   <!-- Main presentation content -->
-  <section id="impress" class="show-speaker-notes">
+  <section id="impress">
 
     <section id="welcome-to-dsa-live" class="step" data-x="0" data-y="0" data-scale="3">
       Welcome to<br/>
@@ -136,6 +136,10 @@
           under <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC 3.0</a>
       </ul>
     </section>
+  </section>
+
+  <section id="controls">
+    <img id="toggle-notes" src="images/note.svg" title="Toggle speaker notes on and off" />
   </section>
 
   <!-- Scripts -->

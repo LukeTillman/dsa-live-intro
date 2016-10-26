@@ -67,7 +67,7 @@ body.impress-on-overview .step {
   border-radius: 3px;
 }
 
-#impress.show-speaker-notes .step.active .step-speaker-notes {
+body.show-speaker-notes .step.active .step-speaker-notes {
   display: block;
 }
 
@@ -117,6 +117,30 @@ section.fallback-message {
 
 body.impress-not-supported > section.fallback-message {
   display: block;
+}
+
+/**
+ * Controls
+ */
+#controls {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+#controls img {
+  width: auto;
+  height: 2rem;
+  opacity: 0.2;
+  cursor: pointer;
+}
+
+#controls img:hover {
+  opacity: 1.0;
+}
+
+body.show-speaker-notes #toggle-notes {
+  opacity: 0.9;
 }
 
 /**

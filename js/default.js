@@ -53,7 +53,14 @@
       stepIdx++;
     });
   });
-    
+
+  // Event listeners for controls
+  var bodyEl = document.getElementById('the-body');
+  
+  document.getElementById('toggle-notes').addEventListener('click', function(ev) {
+    bodyEl.classList.toggle('show-speaker-notes');
+  });
+   
   // Init impress
   impress().init();
 }());
