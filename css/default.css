@@ -58,6 +58,19 @@ body.impress-on-overview .step {
   opacity: 1.0;
 }
 
+.step-speaker-notes {
+  display: none;
+  position: fixed;
+  bottom: -4rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+}
+
+#impress.show-speaker-notes .step.active .step-speaker-notes {
+  display: block;
+}
+
 /**
  * Text styles
  */
