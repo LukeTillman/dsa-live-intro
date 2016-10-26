@@ -168,7 +168,7 @@ body.show-speaker-notes #toggle-notes {
 }
 
 /**
- * Specific slide styles
+ * Welcome slide
  */
 
 #welcome-to-dsa-live > h1 {
@@ -185,6 +185,9 @@ body.show-speaker-notes #toggle-notes {
   transform: rotateZ(-5deg);
 }
 
+/**
+ * Relational history slide
+ */
 #relational-db-background > .tile-container {
   display: flex;
   flex-wrap: wrap;
@@ -202,6 +205,9 @@ body.show-speaker-notes #toggle-notes {
   height: auto;
 }
 
+/**
+ * Relevant technology slide
+ */
 #relevant-technology > table th:nth-child(-n+2) {
   width: 15%;
 }
@@ -220,10 +226,10 @@ body.show-speaker-notes #toggle-notes {
 
 #relevant-technology.active > table td {
   opacity: 0.3;
-  transition: opacity 1s linear 2s;
+  transition: opacity 1s linear 1s;
 }
 
-#relevant-technology.active > table tr.is-highlighted > td {
+#relevant-technology > table tr.is-highlighted > td {
   border-top: 3px solid #222;
   border-bottom: 3px solid #222;
   font-weight: bold;
@@ -231,3 +237,58 @@ body.show-speaker-notes #toggle-notes {
   transition: none;
 }
 
+/**
+ * Make more money slide
+ */
+#more-money > ul {
+  list-style-type: none;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#more-money > ul > li {
+  margin-bottom: 0.5em;
+  box-sizing: border-box;
+}
+
+#more-money.active > ul > li {
+  transition: opacity 1s linear 1s;
+  opacity: 0.3;
+}
+
+#more-money > ul > li > span {
+  display: inline-block;
+  text-align: right;
+  box-sizing: border-box;
+  padding-right: 0.25em;
+}
+
+#more-money > ul > li > span.key { 
+  width: 35%;
+}
+
+#more-money > ul > li > span.value {
+  background-color: #fff;
+  color: #222;
+}
+
+#more-money > ul > li > span.value.tier-1 {
+  width: 65%;
+}
+
+#more-money > ul > li > span.value.tier-2 {
+  width: 60%;
+}
+
+#more-money > ul > li > span.value.tier-3 {
+  width: 55%;
+}
+
+#more-money > ul > li.is-highlighted {
+  font-weight: bold;
+  opacity: 1.0;
+}
+
+#more-money > ul > li.is-highlighted > span.value {
+  background-color: rgb(255, 199, 44);
+}
