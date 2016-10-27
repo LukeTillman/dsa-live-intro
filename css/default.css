@@ -116,6 +116,12 @@ a {
   color: rgb(255, 199, 44);
 }
 
+.blink {
+  animation: blink-animation 1.2s steps(5, start) infinite;
+}
+
+@keyframes blink-animation { to { visibility: hidden; } }
+
 /**
  * Table styles
  */
