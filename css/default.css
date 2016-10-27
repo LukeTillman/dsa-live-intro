@@ -399,3 +399,58 @@ body.show-speaker-notes #toggle-notes {
   width: 50%;
   height: auto;
 }
+
+/**
+ * Meetups
+ */
+#meetups-logo {
+  width: 25%;
+  height: auto;
+}
+
+#meetups-map-container {
+  position: relative;
+}
+
+#meetups-map {
+  width: 100%;
+  height: auto;
+}
+
+#meetups img.map-pin-icon {
+  width: 30px;
+  height: auto;
+  position: absolute;
+  animation: wobble 5s infinite;
+  transform-origin: bottom center;
+}
+
+#meetups img.map-pin-icon:nth-of-type(even) {
+  animation: wobble 3s infinite;
+}
+
+#meetups-pin-sf {
+  left: 110px;
+  top: 199px;
+}
+
+#meetups-pin-ny {
+  left: 248px;
+  top: 177px;
+}
+
+#meetups-pin-london {
+  left: 438px;
+  top: 155px;
+}
+
+#meetups-pin-paris {
+  left: 454px;
+  top: 162px;
+}
+
+@keyframes wobble {
+  0% { transform: rotate(10deg); }
+  50% { transform: rotate(-10deg); }
+  100% { transform: rotate(10deg); }
+}
