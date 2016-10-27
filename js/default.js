@@ -27,7 +27,7 @@
   var stepIdx = 0;
   sections.forEach(function(section) {
     // Figure out where to place the header around its outer circle
-    var headerDeg = (rotationPerStep * section.steps.length / 2) + (stepIdx * rotationPerStep);
+    var headerDeg = (rotationPerStep * ((section.steps.length - 1) / 2)) + (stepIdx * rotationPerStep);
     var headerRadians = headerDeg * (Math.PI / 180);
     var headerX = Math.round(Math.sin(headerRadians) * headerRadius);
     var headerY = Math.round(Math.cos(headerRadians) * headerRadius * -1);
