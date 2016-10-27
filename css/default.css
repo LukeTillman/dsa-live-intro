@@ -391,3 +391,11 @@ body.show-speaker-notes #toggle-notes {
   padding: 0.5em;
   border-radius: 0.5em;
 }
+
+/**
+ * Get certified
+ */
+#get-certified img {
+  width: 50%;
+  height: auto;
+}
