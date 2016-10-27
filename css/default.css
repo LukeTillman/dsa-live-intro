@@ -220,6 +220,37 @@ body.show-speaker-notes #toggle-notes {
 }
 
 /**
+ * Why DSE slide
+ */
+#why-dse > ul {
+  list-style-type: none;
+}
+
+#why-dse > ul > li {
+  margin-bottom: 1em;
+}
+
+#why-dse > ul > li:nth-child(even) {
+  margin-left: 5em;
+}
+
+#why-dse > ul > li:nth-child(odd) {
+  margin-right: 5em;
+}
+
+#why-dse > ul > li:last-child {
+  margin-bottom: 0;
+}
+
+#why-dse > ul > li > h4 {
+  font-family: serif;
+  color: #222;
+  padding: 0.5rem 0.5rem 1rem 0.5rem;
+  background-image: url('../images/torn-paper.svg');
+  background-position: bottom center;
+}
+
+/**
  * Relevant technology slide
  */
 #relevant-technology > table th:nth-child(-n+2) {
