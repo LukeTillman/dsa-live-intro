@@ -56,21 +56,41 @@
 
   // Function for setting customizable content on the presentation
   function updatePresentation(ev) {
-    var location = document.getElementById('customize-location');
-    var name = document.getElementById('customize-name');
-    var title = document.getElementById('customize-title');
-    var twitter = document.getElementById('customize-twitter');
+    var location = document.getElementById('customize-location').value;
+    var name = document.getElementById('customize-name').value;
+    var title = document.getElementById('customize-title').value;
+    var twitter = document.getElementById('customize-twitter').value;
 
-    document.getElementById('event-location').innerText = location.value;
-    document.getElementById('presenter-name').innerText = name.value;
-    document.getElementById('presenter-title').innerText = title.value;
-    document.getElementById('presenter-twitter').innerText = twitter.value;
+    document.getElementById('event-location').innerText = location;
+    document.getElementById('presenter-name').innerText = name;
+    document.getElementById('presenter-title').innerText = title;
+    document.getElementById('presenter-twitter').innerText = twitter;
 
+    // Remember values by storing them in browser's local storage
+    var data = {
+      location: location,
+      name: name,
+      title: title,
+      twitter: twitter
+    };
+    window.localStorage.setItem('event-data', JSON.stringify(data));
+
+    // Stop form from submitting if we have an event object
     if (ev) {
       ev.preventDefault();
     }
   }
 
+  // Load form values from storage if present
+  var savedData = window.localStorage.getItem('event-data');
+  if (savedData) {
+    var parsedData = JSON.parse(savedData);
+    document.getElementById('customize-location').value = parsedData.location;
+    document.getElementById('customize-name').value = parsedData.name;
+    document.getElementById('customize-title').value = parsedData.title;
+    document.getElementById('customize-twitter').value = parsedData.twitter;
+  }
+  
   // Do initial update based on form values
   updatePresentation();
 
