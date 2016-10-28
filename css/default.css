@@ -182,6 +182,33 @@ body.show-speaker-notes #toggle-notes {
 }
 
 /**
+ * Customize input
+ */
+#customize {
+  position: fixed;
+  bottom: 4rem;
+  right: 1rem;
+  padding: 1em;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#customize label, #customize input {
+  display: block;
+}
+
+#customize input {
+  margin-bottom: 0.5em;
+}
+
+#customize button {
+  background-color: rgb(12, 183, 225);
+  border: 1px solid #222;
+  color: #222;
+  border-radius: 3px;
+  padding: 0.25em 0.5em;
+}
+
+/**
  * Welcome slide
  */
 

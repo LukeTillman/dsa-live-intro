@@ -54,6 +54,26 @@
     });
   });
 
+  // Function for setting customizable content on the presentation
+  function updatePresentation(ev) {
+    var location = document.getElementById('customize-location');
+    var name = document.getElementById('customize-name');
+    var title = document.getElementById('customize-title');
+    var twitter = document.getElementById('customize-twitter');
+
+    document.getElementById('event-location').innerText = location.value;
+    document.getElementById('presenter-name').innerText = name.value;
+    document.getElementById('presenter-title').innerText = title.value;
+    document.getElementById('presenter-twitter').innerText = twitter.value;
+
+    if (ev) {
+      ev.preventDefault();
+    }
+  }
+
+  // Do initial update based on form values
+  updatePresentation();
+
   // Init impress
   impress().init();
 
@@ -63,4 +83,14 @@
   document.getElementById('toggle-notes').addEventListener('click', function(ev) {
     bodyEl.classList.toggle('show-speaker-notes');
   });
+
+  document.getElementById('toggle-customize').addEventListener('click', function(ev) {
+    document.getElementById('customize').classList.toggle('hidden');
+  });
+
+  document.getElementById('customize-form').addEventListener('submit', updatePresentation);
+
+  // Don't propagate keys pressed in the customize form
+  document.getElementById('customize').addEventListener('keyup', function(ev) { ev.stopPropagation(); });
+  document.getElementById('customize').addEventListener('keydown', function(ev) { ev.stopPropagation(); });
 }());
